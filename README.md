@@ -16,7 +16,8 @@ cookbooks.
   take almost no time to execute. 
 - __Remote Converge__. Converge can be kicked off from a remote
   workstation but runs on a system on the corporate network. Packages are 
-  downloaded to the docker host, not your workstation. 
+  downloaded to the docker host, not your workstation. Converge doesn't 
+  consume memory/cpu on your workstation. 
 - __Centralized__. We can inspect containers which have been run either
   in CI or from workstations, kill off orphan containers, etc. This
   becomes useful when cookbook converges involve connections to databases
