@@ -1,0 +1,16 @@
+---
+driver_plugin: vagrant
+provisioner: chef_solo
+platforms:
+- name: centos-6.4-x86_64
+  driver_config:
+    box: opscode-centos-6.4-x86_64
+    box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.4_chef-provisionerless.box
+    require_chef_omnibus: true
+    customize:
+      cpus: 1
+      memory: 256
+suites:
+- name: default
+  run_list:
+    - recipe[cook_docker]

@@ -1,0 +1,10 @@
+---
+driver_plugin: docker
+driver_config:
+  use_sudo: true
+  image: centos
+  socket: tcp://localhost:4243
+  provision_command:
+    - 'curl -L https://www.opscode.com/chef/install.sh | bash'
+    - "/opt/chef/embedded/bin/gem install chef-zero --version '~> 1.7.0'"
+    - 'yum -y install make gcc which bash tar cronie'
