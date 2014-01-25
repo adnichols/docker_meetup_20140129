@@ -126,6 +126,7 @@ provision_command:
   - "curl -L https://www.opscode.com/chef/install.sh | /bin/bash"
   - "yum -y install unzip make gcc rsync which"
   - "ln -s /proc/self/fd /dev/fd"
+  - "touch /etc/sysconfig/network"
 ```
 
 #### But you can also do some cool stuff
