@@ -29,6 +29,7 @@ tests.
 ### Usage
 
 To run this cookbook:
+
 1. Clone this repository
 2. Run `bundle install`
 3. Run `bundle exec rake test` to perform all tests
@@ -36,6 +37,7 @@ To run this cookbook:
 5. Run `bundle exec rake integration` to perform integration tests
 
 Or to just use test-kitchen without integrated rake tasks
+
 1. Run `kitchen converge` to converge the system
 2. Run `kitchen verify` to perorm integration tests
 
@@ -43,6 +45,7 @@ Or to just use test-kitchen without integrated rake tasks
 
 Compared to the default cookbook structure this has the following
 additions:
+
 - unit/integration tests are in `test` directory
 - Gemfile added which includes
   [cookbook-development](https://github.com/RallySoftware-cookbooks/cookbook-development)
