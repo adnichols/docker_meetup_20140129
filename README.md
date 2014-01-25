@@ -15,10 +15,8 @@ cookbooks.
   to do things like install chef, which are then loaded from cache and
   take almost no time to execute. 
 - __Remote Converge__. Converge can be kicked off from a remote
-  workstation but runs on a system on the corporate network. If we
-  have IP bases restrictions the traffic comes from the corporate
-  network. Packages do not have to be loaded to workstation, they are
-  loaded on docker system.
+  workstation but runs on a system on the corporate network. Packages are 
+  downloaded to the docker host, not your workstation. 
 - __Centralized__. We can inspect containers which have been run either
   in CI or from workstations, kill off orphan containers, etc. This
   becomes useful when cookbook converges involve connections to databases
