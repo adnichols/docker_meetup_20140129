@@ -22,7 +22,7 @@ This makes use of the following tools:
 Of these, only kitchen-docker is in the Gemfile for this cookbook, all
 other dependencies are in the gemspec for cookbook-development. 
 
-You can look at the `.kitchen.yml` and .kitchen.local.yml` for
+You can look at the `.kitchen.yml` and `.kitchen.local.yml` for
 information about how test-kitchen is configured to run integration
 tests.
 
