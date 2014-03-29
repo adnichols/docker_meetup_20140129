@@ -49,7 +49,7 @@ Typical workflow is like this:
 
 ## Interesting features of kitchen-docker driver
 
-The [kitchen-docker](https://github.com/portertech/kitchen-docker) driver is 
+The [kitchen-docker-api](https://github.com/adnichols/kitchen-docker-api) driver is 
 what allows test-kitchen to use docker for converging cookbooks for testing. 
 
 Features
@@ -71,7 +71,7 @@ Adding to your cookbook is as easy as adding to your Gemfile:
 
 Gemfile:
 ```
-gem 'kitchen-docker', :github => 'portertech/kitchen-docker'
+gem 'kitchen-docker-api'
 ```
 
 ## Enabling docker in a cookbook

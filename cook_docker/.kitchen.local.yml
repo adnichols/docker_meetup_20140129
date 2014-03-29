@@ -1,7 +1,6 @@
 ---
 driver_plugin: docker
 driver_config:
-  use_sudo: true
   image: centos
   socket: tcp://localhost:4243
   provision_command:
